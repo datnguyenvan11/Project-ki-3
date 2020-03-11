@@ -28,6 +28,8 @@ namespace Project_Ki_3.Models
         public DbSet<HealthInsurance> HealthInsurances { get; set; }
         public DbSet<HouseInsurance> HouseInsurances { get; set; }
         public DbSet<LifeInsurance> LifeInsurances { get; set; }
+        public DbSet<Programme> Programmes { get; set; }
+
 
 
         //public class MyEntity

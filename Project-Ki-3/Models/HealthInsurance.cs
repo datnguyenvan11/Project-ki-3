@@ -14,6 +14,7 @@ namespace Project_Ki_3.Models
         public int InsurancePackageId { get; set; }
         [Key, Column(Order = 1)]
         public int ContractId { get; set; }
+        public int ProgrammeId { get; set; }
         public string Name { get; set; }
         public string PhoneNumber { get; set; }
         public string Email { get; set; }
@@ -25,6 +26,7 @@ namespace Project_Ki_3.Models
         public int Quantity { get; set; }
         public double UnitPrice { get; set; }
         public virtual Contract Contract { get; set; }
+        public virtual Programme Programme { get; set; }
         public virtual InsurancePackage InsurancePackage { get; set; }
     }
 }
