@@ -387,11 +387,14 @@
 
     <!-- Page level custom scripts -->
     <script src="/Areas/Admin/Assets/js/demo/chart-area-demo.js"></script>
-    <script src="/Areas/Admin/Assets/js/demo/chart-pie-demo.js"></script>   
+    <script src="/Areas/Admin/Assets/js/demo/chart-pie-demo.js"></script>
 
     <!-->CkEditor<-->
-    <script src="/Areas/Admin/Assets/js/ckeditor.js"></script>
-
+    @Scripts.Render("~/bundles/ckeditor")
+    <script>
+       CKEDITOR.replace('Description', {
+    htmlEncodeOutput: true });
+    </script>
 </body>
 
 </html>
