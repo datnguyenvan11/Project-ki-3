@@ -117,5 +117,6 @@ namespace Project_Ki_3.Controllers
             HttpContext.GetOwinContext().Authentication.SignOut();
             return Redirect("/Home");
         }
+
     }
 }
