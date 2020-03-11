@@ -13,5 +13,12 @@ namespace Project_Ki_3.Areas.Admin.Controllers
         {
             return View();
         }
+
+        public ActionResult Table()
+        {
+            return View();
+        }
+
+       
     }
 }
